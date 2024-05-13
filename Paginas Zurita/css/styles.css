@@ -1,5 +1,17 @@
-#jersey{
+.jersey{
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
+
+.tabla{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabla th,td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 3px;
+}
