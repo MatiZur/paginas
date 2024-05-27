@@ -1,19 +1,21 @@
-const radios = document.querySelectorAll('input[type="radio"]');
-const divEj39 = document.querySelector('.ej39');
+document.addEventListener("DOMContentLoaded", function() {
+  var ejercicios = document.querySelectorAll('.ejercicio');
 
-radios.forEach(radio => {
-  radio.addEventListener('change', function() {
-    if (this.checked) {
-      divEj39.style.backgroundColor = this.value;
-    }
-  });
-});
-const divEj40 = document.querySelector('.ej40');
-
-radios.forEach(radio => {
-  radio.addEventListener('change', function() {
-    if (this.checked) {
-      divEj40.style.backgroundColor = this.value;
-    }
+  ejercicios.forEach(function(ejercicio) {
+      var opciones = ejercicio.querySelectorAll('input[type="radio"]');
+      
+      opciones.forEach(function(opcion) {
+          opcion.addEventListener('change', function() {
+              var respuestaCorrecta = ejercicio.querySelector('input[value="lime"]');
+              
+              if (opcion === respuestaCorrecta) {
+                  ejercicio.classList.remove('incorrecto');
+                  ejercicio.classList.add('correcto');
+              } else {
+                  ejercicio.classList.remove('correcto');
+                  ejercicio.classList.add('incorrecto');
+              }
+          });
+      });
   });
 });
