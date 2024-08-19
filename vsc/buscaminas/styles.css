@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+}
+.container {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    background: gainsboro;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.bomba {
+    background: black;
+    color: white;
+}
+
+.uno {
+    color: blue;
+}
+
+.dos {
+    color: green;
+}
+
+.tres {
+    color: red;
+}
+
+.cuatro {
+    color: rgb(10, 10, 143);
+}
+
+.cinco {
+    color: rgb(113, 9, 9);
+}
