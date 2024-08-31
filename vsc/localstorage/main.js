@@ -23,5 +23,6 @@ function handleSubmit(){
 function handleClear(){
     event.preventDefault();
     localStorage.clear();
+    contador = 0;
     div.textContent = '';
 }
