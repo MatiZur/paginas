@@ -1,4 +1,4 @@
-let contador=0;
+let contador=localStorage.length;
 let div = document.querySelector('.container');
 
 for(let i=1 ; i<localStorage.length+1 ; i++){
@@ -17,6 +17,7 @@ function handleSubmit(){
     div.append(p);
     contador++;
     localStorage.setItem(contador, texto);
+    input.value = '';
 }
 
 function handleClear(){
